@@ -5,11 +5,9 @@ import enums.EnumOperacao;
 
 public class CalculadoraController {
     private Double total;
-    private int per;
     
     public CalculadoraController(){
         total = 0.0;
-        per = 0;
     }
     
     public Double realizaOperacao(EnumOperacao operacao, Double valor){
