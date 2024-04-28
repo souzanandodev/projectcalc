@@ -1,5 +1,14 @@
-<h1 align="center">Projeto Calculadora</h1>
+# Projeto Calculadora
+Calculadora desenvolvido com intuíto no meu aprendizado em Java
 
-Calculadora desenvolvido através do passo a passo no YOUTUBE [DESSE LINK](https://www.youtube.com/watch?v=J08VaQHi4pM&t=89s) - MANUAL DA PROGRAMAÇÃO.
+💻 Linguagem desenvolvida: Java
 
-O intuito do video é ensinar como programar uma calculadora, mas com BUGS para dispertar a curisidade de como resolver o problema.
+Assistir um video no canal Manual da Programação do YOUTUBE, [neste Link](https://www.youtube.com/watch?v=J08VaQHi4pM).
+
+Boa didática e o mais interessante é que existe 🐛 (BUG) para estar incentivando a forma de corrigir. Estes bugs é informado no final do Video.
+
+Inicialmente é ensinado a organização do Layout e as operações basicas:
+ - Soma;
+ - Adição;
+ - Multiplicação;
+ - Divisão
