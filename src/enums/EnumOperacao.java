@@ -1,9 +1,5 @@
 package enums;
 
-/**
- *
- * @author user
- */
 public enum EnumOperacao {
     SOMA, 
     SUBTRACAO, 

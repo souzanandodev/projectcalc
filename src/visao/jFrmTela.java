@@ -9,10 +9,6 @@ import java.text.NumberFormat;
 import java.text.ParseException;
 import java.util.Locale;
 
-/**
- *
- * @author user
- */
 public class jFrmTela extends javax.swing.JFrame {
 
     int x = 0;

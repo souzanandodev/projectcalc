@@ -1,9 +1,5 @@
 package calculadora;
 
-/**
- *
- * @author user
- */
 import visao.jFrmTela;
 
 public class Principal {
