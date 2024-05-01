@@ -6,5 +6,6 @@ public enum EnumOperacao {
     DIVISAO, 
     MULTIPLICACAO,
     PORCENTAGEM_ADD,
-    PORCENTAGEM_SUB;
+    PORCENTAGEM_SUB,
+    EXPOENTE;
 }

@@ -26,6 +26,8 @@ public class CalculadoraController {
             total += total * valor / 100.0;
         } else if(operacao.equals(EnumOperacao.PORCENTAGEM_SUB)){
             total -= total * valor / 100.0;
+        } else if(operacao.equals(EnumOperacao.EXPOENTE)){
+            total = Math.pow(total, valor);
         }
         return total;
     }

@@ -44,8 +44,8 @@ public class jFrmTela extends javax.swing.JFrame {
 
         tfValor = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
+        btAC = new javax.swing.JButton();
         btElevado = new javax.swing.JButton();
-        btMaisMenos = new javax.swing.JButton();
         btPercentual = new javax.swing.JButton();
         btDividir = new javax.swing.JButton();
         bt7 = new javax.swing.JButton();
@@ -74,6 +74,14 @@ public class jFrmTela extends javax.swing.JFrame {
 
         jPanel1.setLayout(new java.awt.GridLayout(5, 4));
 
+        btAC.setText("AC");
+        btAC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btACActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btAC);
+
         btElevado.setText("X^Y");
         btElevado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -81,9 +89,6 @@ public class jFrmTela extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btElevado);
-
-        btMaisMenos.setText("+/-");
-        jPanel1.add(btMaisMenos);
 
         btPercentual.setText("%");
         btPercentual.addActionListener(new java.awt.event.ActionListener() {
@@ -298,8 +303,10 @@ public class jFrmTela extends javax.swing.JFrame {
     }//GEN-LAST:event_btVirgulaActionPerformed
 
     private void btElevadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btElevadoActionPerformed
+        calculadoraController.realizaOperacao(EnumOperacao.EXPOENTE, stringToDouble(tfValor.getText()));
+        ultimaOperacao = EnumOperacao.EXPOENTE;
         limpa();
-        calculadoraController.zerar();
+        //calculadoraController.zerar();
         x = 0;
     }//GEN-LAST:event_btElevadoActionPerformed
 
@@ -343,6 +350,12 @@ public class jFrmTela extends javax.swing.JFrame {
         Porcentagem();
         limpa();
     }//GEN-LAST:event_btPercentualActionPerformed
+
+    private void btACActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btACActionPerformed
+        limpa();
+        calculadoraController.zerar();
+        x = 0;
+    }//GEN-LAST:event_btACActionPerformed
 
     private String DoubleToString(Double numero){
         if(numero != null){
@@ -391,12 +404,12 @@ public class jFrmTela extends javax.swing.JFrame {
     private javax.swing.JButton bt7;
     private javax.swing.JButton bt8;
     private javax.swing.JButton bt9;
+    private javax.swing.JButton btAC;
     private javax.swing.JButton btDividir;
     private javax.swing.JButton btElevado;
     private javax.swing.JButton btFechar;
     private javax.swing.JButton btIgual;
     private javax.swing.JButton btMais;
-    private javax.swing.JButton btMaisMenos;
     private javax.swing.JButton btMenos;
     private javax.swing.JButton btMultiplicar;
     private javax.swing.JButton btPercentual;

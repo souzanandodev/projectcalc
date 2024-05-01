@@ -63,6 +63,14 @@
         <Property name="rows" type="int" value="5"/>
       </Layout>
       <SubComponents>
+        <Component class="javax.swing.JButton" name="btAC">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="AC"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btACActionPerformed"/>
+          </Events>
+        </Component>
         <Component class="javax.swing.JButton" name="btElevado">
           <Properties>
             <Property name="text" type="java.lang.String" value="X^Y"/>
@@ -70,11 +78,6 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btElevadoActionPerformed"/>
           </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="btMaisMenos">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="+/-"/>
-          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btPercentual">
           <Properties>
