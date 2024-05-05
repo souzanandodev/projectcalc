@@ -1,5 +1,5 @@
 # Projeto Calculadora
-Calculadora desenvolvido com intuíto no meu aprendizado em Java
+Calculadora desenvolvido com intuíto no aprendizado
 
 💻 Linguagem desenvolvida: Java
 
@@ -13,8 +13,8 @@ Inicialmente é ensinado a organização do Layout e as operações basicas:
  - Multiplicação;
  - Divisão
 
-Em relação ao video, faltava codificar o Porcetagem e esta feito.
+Em relação ao video, faltava codificar o Porcetagem e esta feito
 
-🔶 Substituido o botão +/- por expoente.
+🔶 Substituido o botão +/- por expoente
 
-Calculadora em JAVA esta 👍.
+Calculadora em JAVA esta 👍
